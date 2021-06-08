@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:personal_expenses/transaction.dart';
 import 'package:intl/intl.dart';
@@ -36,7 +37,7 @@ class MyHomePage extends StatelessWidget {
         title: Text('Personal expenses'),
       ),
       body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Container(
@@ -45,6 +46,28 @@ class MyHomePage extends StatelessWidget {
                 color: Colors.blue,
                 child: Text('CHART!'),
                 elevation: 5,
+              ),
+            ),
+            Card(
+              elevation: 5,
+              child: Container(
+                padding: EdgeInsets.all(10),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: <Widget>[
+                    TextField(
+                      decoration: InputDecoration(labelText: 'Title'),
+                    ),
+                    TextField(
+                      decoration: InputDecoration(labelText: 'Amount'),
+                    ),
+                    FlatButton(
+                      onPressed: () {},
+                      child: Text('Add Transaction'),
+                      textColor: Colors.purple,
+                    )
+                  ],
+                ),
               ),
             ),
             Column(
