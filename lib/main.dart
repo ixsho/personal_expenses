@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Personal expenses',
       theme: ThemeData(
           primarySwatch: Colors.green,
+          errorColor: Colors.red,
           fontFamily: 'Quiksand',
           textTheme: ThemeData.light().textTheme.copyWith(
                 title: TextStyle(
