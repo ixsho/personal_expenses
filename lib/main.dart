@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Personal expenses',
+      title: 'Personal Expenses',
       theme: ThemeData(
           primarySwatch: Colors.green,
           errorColor: Colors.red,
@@ -179,7 +179,7 @@ class _MyHomePageState extends State<MyHomePage> {
           )
         : AppBar(
             title: Text(
-              'Personal expenses',
+              'Personal Expenses',
             ),
             actions: <Widget>[
               IconButton(
